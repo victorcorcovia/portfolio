@@ -1346,3 +1346,79 @@ img {
     font-size: 11px;
   }
 }
+
+
+/* ========================================
+   MENU MOBILE - ROLAGEM HORIZONTAL
+======================================== */
+
+@media (max-width: 650px) {
+
+  .navegacao {
+    width: 100%;
+    min-height: auto;
+    padding: 12px 0 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Logo centralizada */
+
+  .navegacao .logo {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  /* Menu em uma única linha */
+
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    max-width: 100%;
+    gap: 28px;
+    padding: 12px 20px 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /* Rolagem suave com o dedo */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu li {
+    flex: 0 0 auto;
+  }
+
+  .menu a {
+    display: block;
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 4px 0;
+  }
+
+  .menu a:hover,
+  .menu a:focus-visible {
+    color: var(--vermelho);
+  }
+
+  /* Compensa a altura do cabeçalho */
+
+  .inicio {
+    padding-top: 165px;
+  }
+
+  html {
+    scroll-padding-top: 115px;
+  }
+}
