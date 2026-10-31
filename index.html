@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/vh-favicon.ico" />
+
+    <meta
+      name="description"
+      content="Portfólio de Victor Hugo Corcovia, desenvolvedor Full Stack e estudante de Engenharia de Software."
+    />
+
+    <title>Victor Corcovia | Desenvolvedor Full Stack</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================
+       CABEÇALHO
+  ======================================== -->
+
+    <header class="cabecalho">
+      <nav class="navegacao container" aria-label="Navegação principal">
+        <a href="#inicio" class="logo"> &lt;Victor<span>/</span>&gt; </a>
+
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#habilidades">Tecnologias</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ========================================
+         INÍCIO - HERO ANIMADO
+    ======================================== -->
+
+      <section id="inicio" class="inicio">
+        <div class="container hero-grid">
+          <!-- APRESENTAÇÃO -->
+
+          <div class="hero-texto">
+            <p class="hero-prefixo">// full-stack · software engineering</p>
+
+            <h1>
+              Victor Hugo<br />
+              <span>Corcovia.</span>
+            </h1>
+
+            <h2>Desenvolvedor Full Stack</h2>
+
+            <div class="hero-linha"></div>
+
+            <!-- TECNOLOGIAS EM DESTAQUE -->
+
+            <div class="hero-tags">
+              <span>Node.js</span>
+              <span>Next.js</span>
+              <span>Firebase</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+            </div>
+
+            <!-- MENSAGENS ANIMADAS -->
+
+            <div class="mensagem-dinamica" aria-live="off">
+              <span class="prompt">&gt;</span>
+
+              <span id="texto-dinamico"> Desenvolvimento Full Stack </span>
+
+              <span class="cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="descricao-inicio">
+              Da ideia ao código, do código à solução. Desenvolvendo aplicações
+              e experiências digitais com foco em qualidade e funcionalidade.
+            </p>
+
+            <!-- BOTÕES -->
+
+            <div class="botoes">
+              <a href="#projetos" class="botao botao-principal">
+                Ver projetos
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a href="#contato" class="botao botao-secundario">
+                Entre em contato
+              </a>
+            </div>
+          </div>
+
+          <!-- ========================================
+             TERMINAL ANIMADO
+        ======================================== -->
+
+          <div class="hero-terminal">
+            <div class="terminal-topo">
+              <div class="terminal-pontos" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <span>victor@dev: ~</span>
+            </div>
+
+            <div class="terminal-corpo">
+              <!-- O JAVASCRIPT INSERE OS COMANDOS AQUI -->
+
+              <div
+                id="terminal-saida"
+                aria-label="Demonstração animada de comandos de terminal"
+              ></div>
+
+              <span class="terminal-cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+         SOBRE MIM
+    ======================================== -->
+
+      <section id="sobre" class="secao">
+        <div class="container">
+          <p class="secao-numero">01 / QUEM SOU</p>
+
+          <h2 class="titulo-secao">Sobre <span>mim.</span></h2>
+
+          <div class="sobre-grid">
+            <!-- FOTO PROFISSIONAL -->
+
+            <div class="foto-perfil">
+              <div class="foto-moldura">
+                <img
+                  src="assets/perfil.png"
+                  alt="Foto profissional de Victor Hugo Corcovia"
+                  loading="lazy"
+                  width="400"
+                  height="500"
+                />
+              </div>
+
+              <div class="foto-detalhe">
+                <span class="foto-status"></span>
+                Desenvolvedor Full Stack
+              </div>
+            </div>
+
+            <!-- BIOGRAFIA -->
+
+            <div class="sobre-texto">
+              <p>
+                Sou Victor Hugo, estudante de Engenharia de Software e
+                apaixonado por tecnologia, programação e pela criação de
+                soluções que transformam ideias em projetos reais.
+              </p>
+
+              <p>
+                Ao longo da minha formação, venho aprimorando meus conhecimentos
+                em desenvolvimento web, software e bancos de dados, sempre
+                buscando colocar o aprendizado em prática.
+              </p>
+
+              <p>
+                Gosto de explorar novas tecnologias, enfrentar desafios e
+                desenvolver soluções funcionais e bem estruturadas. Cada projeto
+                é uma oportunidade de evoluir como desenvolvedor.
+              </p>
+            </div>
+
+            <!-- CARTÃO DE CÓDIGO -->
+
+            <div class="sobre-card">
+              <div class="card-topo">
+                <span class="ponto"></span>
+                <span class="ponto"></span>
+                <span class="ponto"></span>
+
+                <span class="arquivo">developer.js</span>
+              </div>
+
+              <div class="codigo">
+                <p><span class="roxo">const</span> developer = {</p>
+
+                <p>
+                  &nbsp; nome:
+                  <span class="verde">"Victor Hugo Souza Corcovia"</span>,
+                </p>
+
+                <p>
+                  &nbsp; area:
+                  <span class="verde">"Software"</span>,
+                </p>
+
+                <p>
+                  &nbsp; foco:
+                  <span class="verde">"Desenvolvimento"</span>,
+                </p>
+
+                <p>
+                  &nbsp; aprender:
+                  <span class="laranja">true</span>
+                </p>
+
+                <p>};</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+         FORMAÇÃO ACADÊMICA
+    ======================================== -->
+
+      <section id="formacao" class="secao secao-alternativa">
+        <div class="container">
+          <p class="secao-numero">02 / EDUCAÇÃO</p>
+
+          <h2 class="titulo-secao">Formação <span>acadêmica.</span></h2>
+
+          <div class="formacao-card">
+            <div class="formacao-icone">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span class="etiqueta">EM ANDAMENTO</span>
+
+              <h3>Engenharia de Software</h3>
+              <span class="formacao-status">Em andamento</span>
+
+              <p>Centro Universitário Ingá — Uningá</p>
+
+              <p>Graduação</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+     EXPERIÊNCIA PROFISSIONAL
+======================================== -->
+
+      <section class="secao secao-alternativa" id="experiencia">
+        <div class="container">
+          <p class="secao-numero">03 / EXPERIÊNCIA PROFISSIONAL</p>
+
+          <h2 class="titulo-secao">Minha <span>experiência.</span></h2>
+
+          <!-- CREDITALL -->
+          <div class="experiencia-card">
+            <div class="experiencia-topo">
+              <div>
+                <h3>Estagiário em Desenvolvimento de Software</h3>
+                <p class="experiencia-empresa">Creditall</p>
+              </div>
+
+              <span class="experiencia-status atual">Atual</span>
+            </div>
+
+            <p class="experiencia-descricao">
+              Atuação no desenvolvimento e aprimoramento de projetos internos,
+              contribuindo para a criação de soluções tecnológicas, automação de
+              processos e integração de sistemas. Utilização de diferentes
+              tecnologias e ferramentas de Inteligência Artificial para apoiar o
+              desenvolvimento, a análise e a otimização de soluções.
+            </p>
+
+            <div class="experiencia-tags">
+              <span>Desenvolvimento de Software</span>
+              <span>Inteligência Artificial</span>
+              <span>APIs</span>
+              <span>Automação</span>
+              <span>Integração de Sistemas</span>
+            </div>
+          </div>
+
+          <!-- PROJETOS E EXPERIÊNCIAS PRÁTICAS -->
+          <div class="experiencia-subtitulo">
+            <p class="secao-numero">PROJETOS E EXPERIÊNCIAS PRÁTICAS</p>
+            <h3>Soluções que desenvolvi.</h3>
+          </div>
+
+          <!-- LOLLY E-COMMERCE -->
+          <div class="experiencia-card">
+            <div class="experiencia-topo">
+              <div>
+                <h3>Desenvolvimento de E-commerce</h3>
+                <p class="experiencia-empresa">Lolly — Loja Virtual</p>
+              </div>
+
+              <span class="experiencia-status desenvolvimento">
+                Em desenvolvimento
+              </span>
+            </div>
+
+            <p class="experiencia-descricao">
+              Desenvolvimento de uma plataforma de e-commerce, utilizando
+              tecnologias modernas para gerenciamento de produtos, painel
+              administrativo, armazenamento de dados e integração de serviços. O
+              projeto contempla uma arquitetura voltada à operação de vendas
+              online.
+            </p>
+
+            <div class="experiencia-tags">
+              <span>JavaScript</span>
+              <span>Vite</span>
+              <span>Firebase</span>
+              <span>Firestore</span>
+              <span>Cloudinary</span>
+            </div>
+          </div>
+
+          <!-- ANJOS DA MADRUGADA -->
+          <div class="experiencia-card">
+            <div class="experiencia-topo">
+              <div>
+                <h3>Desenvolvimento Web — Projeto Social</h3>
+                <p class="experiencia-empresa">Anjos da Madrugada</p>
+              </div>
+
+              <span class="experiencia-status concluido"> Concluído </span>
+            </div>
+
+            <p class="experiencia-descricao">
+              Desenvolvimento de um site institucional para o projeto social
+              Anjos da Madrugada, com o objetivo de apresentar a iniciativa,
+              divulgar suas ações e fortalecer sua presença digital.
+            </p>
+
+            <div class="experiencia-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Desenvolvimento Web</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+         TECNOLOGIAS
+    ======================================== -->
+
+      <section id="habilidades" class="secao">
+        <div class="container">
+          <p class="secao-numero">04 / STACK</p>
+
+          <h2 class="titulo-secao">Minhas <span>tecnologias.</span></h2>
+
+          <p class="secao-descricao">
+            Tecnologias e ferramentas que utilizo em meus estudos e projetos de
+            desenvolvimento.
+          </p>
+
+          <div class="tecnologias-grid">
+            <div class="tecnologia">
+              <i class="fa-brands fa-html5" aria-hidden="true"></i>
+              <span>HTML5</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+              <span>CSS3</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-js" aria-hidden="true"></i>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-react" aria-hidden="true"></i>
+              <span>React</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+              <span>Node.js</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-solid fa-database" aria-hidden="true"></i>
+              <span>SQL / MySQL</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+              <span>Git</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <span>C / C++</span>
+            </div>
+
+            <!-- VITE -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                alt=""
+                class="tecnologia-icone"
+              />
+              <span>Vite</span>
+            </div>
+
+            <!-- LINUX -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                alt=""
+                class="tecnologia-icone tecnologia-icone-linux"
+              />
+              <span>Linux</span>
+            </div>
+
+            <!-- WINDOWS -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+                alt=""
+                class="tecnologia-icone"
+              />
+              <span>Windows</span>
+            </div>
+
+            <!-- VS CODE -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                alt=""
+                class="tecnologia-icone"
+              />
+              <span>VS Code</span>
+            </div>
+
+            <!-- CLOUDINARY -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.simpleicons.org/cloudinary/3448C5"
+                alt=""
+                class="tecnologia-icone"
+              />
+              <span>Cloudinary</span>
+            </div>
+
+            <!-- TYPESCRIPT -->
+            <div class="tecnologia">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt=""
+                class="tecnologia-icone tecnologia-icone-ts"
+              />
+              <span>TypeScript</span>
+            </div>
+
+            <div class="tecnologia">
+              <i class="fa-solid fa-fire" aria-hidden="true"></i>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+         PROJETOS
+    ======================================== -->
+
+      <section id="projetos" class="secao secao-alternativa">
+        <div class="container">
+          <p class="secao-numero">05 / PORTFÓLIO</p>
+
+          <h2 class="titulo-secao">Projetos <span>desenvolvidos.</span></h2>
+
+          <div class="projetos-grid">
+            <!-- PROJETO 01 - LOLLY -->
+
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+
+              <div class="projeto-conteudo">
+                <span class="projeto-tipo"> WEB / E-COMMERCE </span>
+
+                <h3>E-commerce Platform</h3>
+
+                <p>
+                  Projeto de loja virtual com painel administrativo,
+                  gerenciamento de produtos e integração com serviços em nuvem.
+                </p>
+
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>Firebase</span>
+                  <span>Vite</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJETO 02 - LANDING PAGE -->
+
+            <a
+              href="https://anjosdamadrugadas.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projeto-card projeto-link"
+              aria-label="Visitar projeto Landing Page"
+            >
+              <div class="projeto-imagem">
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+              </div>
+
+              <div class="projeto-conteudo">
+                <span class="projeto-tipo"> WEB / LANDING PAGE </span>
+
+                <h3>
+                  Landing Page
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i>
+                </h3>
+
+                <p>
+                  Desenvolvimento de uma landing page moderna, responsiva e
+                  otimizada para apresentar serviços, produtos ou negócios.
+                </p>
+
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsivo</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- PROJETO 03 - PORTFÓLIO -->
+
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+              </div>
+
+              <div class="projeto-conteudo">
+                <span class="projeto-tipo"> DESENVOLVIMENTO WEB </span>
+
+                <h3>Portfólio Pessoal</h3>
+
+                <p>
+                  Site pessoal para apresentar minha trajetória, conhecimentos e
+                  projetos na área de tecnologia.
+                </p>
+
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+         CONTATO
+    ======================================== -->
+
+      <section id="contato" class="secao contato">
+        <div class="container contato-conteudo">
+          <p class="secao-numero">06 / CONTATO</p>
+
+          <h2 class="titulo-secao">Vamos <span>conversar?</span></h2>
+
+          <p>
+            Tem alguma ideia, oportunidade ou projeto? Entre em contato comigo
+            através das redes abaixo.
+          </p>
+
+          <a
+            href="mailto:victor.corcovia@gmail.com"
+            class="botao botao-principal"
+          >
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            Enviar e-mail
+          </a>
+
+          <a
+            href="https://wa.me/554488398893"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="botao botao-whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+          <div class="redes-sociais">
+            <!-- GITHUB -->
+
+            <a
+              href="https://github.com/victorcorcovia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+            <!-- LINKEDIN -->
+
+            <a
+              href="https://www.linkedin.com/in/victor-corcovia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <!-- INSTAGRAM -->
+
+            <a
+              href="https://www.instagram.com/victorcorcovia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================
+       RODAPÉ
+  ======================================== -->
+
+    <footer class="rodape">
+      <div class="container">
+        <p>© 2026 Victor Hugo Souza Corcovia.</p>
+
+        <p>Transformando ideias em soluções.</p>
+      </div>
+    </footer>
+
+    <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
